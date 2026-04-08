@@ -1,0 +1,61 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# MENTAL WELLNESS TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Daily Practices ──────────────────────────────────────────────────────────
+practices:
+  - name: "Meditation"
+    target: "10 min daily"
+    current_streak: 0
+    tool: ""  # e.g., Headspace, Calm, unguided
+  - name: "Journaling"
+    target: "Daily"
+    current_streak: 0
+    format: ""  # e.g., gratitude, free-write, prompts
+  - name: "Digital Detox"
+    target: ""
+    notes: ""
+  - name: "Nature/Outdoors"
+    target: ""
+    notes: ""
+
+# ── Mood Patterns ────────────────────────────────────────────────────────────
+mood_tracking:
+  method: ""  # manual, app-based
+  avg_this_week: 0  # 1-10
+  avg_this_month: 0
+  triggers_positive: []  # What makes you feel good
+  triggers_negative: []  # What drains you
+
+# ── Stress Management ────────────────────────────────────────────────────────
+stress:
+  current_level: 0  # 1-10
+  main_stressors: []
+  coping_strategies:
+    - ""
+    - ""
+    - ""
+
+# ── Boundaries ───────────────────────────────────────────────────────────────
+boundaries:
+  screen_time_limit: ""  # e.g., "2 hours social media"
+  work_cutoff: ""  # e.g., "No work after 7pm"
+  sleep_schedule: ""  # e.g., "10:30pm - 6:30am"
+  non_negotiables:
+    - ""  # Things you protect no matter what
+    - ""
+
+# ── Gratitude Log (Latest) ──────────────────────────────────────────────────
+gratitude: []
+  # - date: "2026-04-08"
+  #   items:
+  #     - ""
+  #     - ""
+  #     - ""
+
+# ── Professional Support ─────────────────────────────────────────────────────
+support:
+  therapist: ""
+  last_session: ""
+  next_session: ""
+  notes: ""

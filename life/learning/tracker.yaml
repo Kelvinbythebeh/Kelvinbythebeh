@@ -1,0 +1,73 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# LEARNING TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Currently Learning ───────────────────────────────────────────────────────
+active: []
+  # - topic: ""
+  #   resource: ""  # Course name, book, tutorial
+  #   platform: ""  # Udemy, Coursera, YouTube, book
+  #   started: ""
+  #   progress_pct: 0
+  #   target_completion: ""
+  #   notes_ref: ""  # Link to notes file
+  #   priority: medium
+
+# ── Completed ────────────────────────────────────────────────────────────────
+completed: []
+  # - topic: ""
+  #   resource: ""
+  #   completed_date: ""
+  #   rating: 0  # 1-5 how useful was it
+  #   key_takeaways: ""
+  #   certificate: ""  # URL or file ref
+
+# ── Reading List ─────────────────────────────────────────────────────────────
+books:
+  currently_reading: []
+    # - title: ""
+    #   author: ""
+    #   started: ""
+    #   pages_total: 0
+    #   pages_read: 0
+    #   genre: ""  # technical, business, self-help, fiction
+
+  want_to_read: []
+    # - title: ""
+    #   author: ""
+    #   recommended_by: ""
+    #   priority: low
+
+  finished: []
+    # - title: ""
+    #   author: ""
+    #   finished_date: ""
+    #   rating: 0  # 1-5
+    #   key_takeaways: ""
+
+# ── Certifications ───────────────────────────────────────────────────────────
+certifications:
+  active: []
+    # - name: ""
+    #   issuer: ""
+    #   obtained: ""
+    #   expires: ""
+    #   credential_id: ""
+
+  pursuing: []
+    # - name: ""
+    #   target_date: ""
+    #   study_hours_logged: 0
+    #   study_hours_needed: 0
+
+# ── Learning Goals ───────────────────────────────────────────────────────────
+goals:
+  this_quarter: []
+  this_year: []
+    # - "Read 12 books"
+    # - "Complete AWS certification"
+    # - "Learn a new programming language"
+
+# ── Weekly Learning Hours ────────────────────────────────────────────────────
+weekly_target_hours: 5
+this_week_hours: 0

@@ -12,16 +12,45 @@ to help manage work, finances, health, and life.
 │   ├── apple-notes/        # Synced from Apple Notes
 │   ├── onenote/            # Synced from OneNote
 │   └── unified/            # Merged view of all notes (AI reads from here)
-├── life/                   # Life management
+├── life/                   # Life management (all domains)
+│   ├── overview.yaml       # Life dashboard & scores across all domains
+│   ├── goals/              # Annual & quarterly goals
+│   │   └── 2026.yaml       # This year's goals by domain
 │   ├── finance/            # Budget, transactions, goals, net worth
 │   │   ├── tracker.yaml    # Central finance config & overview
 │   │   ├── transactions/   # Monthly transaction logs
 │   │   ├── budgets/        # Budget plans
 │   │   └── reports/        # Generated reports
-│   └── health/             # Health & wellness tracking
-│       ├── tracker.yaml    # Health goals, metrics, plans
-│       ├── logs/           # Daily/monthly health logs
-│       └── goals/          # Health goals
+│   ├── health/             # Health & wellness tracking
+│   │   ├── tracker.yaml    # Health goals, metrics, plans
+│   │   └── logs/           # Daily/monthly health logs
+│   ├── fitness/            # Workout plans, PRs, streaks
+│   │   ├── tracker.yaml
+│   │   ├── workouts/       # Workout logs
+│   │   └── progress/       # Progress photos/measurements
+│   ├── mental-wellness/    # Meditation, journaling, mood, stress
+│   │   └── tracker.yaml
+│   ├── career/             # Role, skills, compensation, wins
+│   │   ├── tracker.yaml
+│   │   ├── resume/
+│   │   └── skills/
+│   ├── relationships/      # Inner circle, friends, network, important dates
+│   │   └── tracker.yaml
+│   ├── learning/           # Courses, books, certifications
+│   │   ├── tracker.yaml
+│   │   └── books/
+│   ├── personal-growth/    # Habits, routines, experiments, reflections
+│   │   ├── tracker.yaml
+│   │   ├── habits/
+│   │   └── journal/
+│   ├── travel/             # Trips, bucket list, travel budget
+│   │   └── tracker.yaml
+│   ├── side-projects/      # Ideas, active builds, shipped projects
+│   │   └── tracker.yaml
+│   ├── home/               # Maintenance, bills, inventory, documents
+│   │   └── tracker.yaml
+│   └── legal/              # Insurance, tax, warranties, key documents
+│       └── tracker.yaml
 ├── work/                   # Work management
 │   ├── tracker.yaml        # Projects, tasks, OKRs, meetings
 │   ├── tasks/              # Task details
@@ -66,6 +95,39 @@ to help manage work, finances, health, and life.
 - Track project progress
 - Surface upcoming deadlines
 - Summarize weekly accomplishments
+
+### Career Help:
+- Track wins and achievements for performance reviews
+- Monitor skill development progress
+- Salary benchmarking awareness
+- Networking follow-up reminders
+
+### Relationships Help:
+- Remind about birthdays and important dates
+- Flag when someone hasn't been contacted in a while
+- Track reconnection intentions
+
+### Personal Growth Help:
+- Track habit streaks
+- Facilitate weekly reviews using `templates/weekly-review.yaml`
+- Monitor life scores across domains from `life/overview.yaml`
+- Suggest experiments based on goals
+
+### Travel Help:
+- Track upcoming trips, budget, and documents needed
+- Flag passport/document expiries
+
+### Home & Legal Help:
+- Remind about bill due dates, insurance renewals, warranty expiries
+- Track maintenance schedules
+
+### Weekly Review Flow:
+When Kelvin asks for a weekly review:
+1. Read `life/overview.yaml` for current life scores
+2. Check all tracker files for progress updates
+3. Review notes from the past week
+4. Help fill in `templates/weekly-review.yaml`
+5. Update life scores and identify focus areas
 
 ### When Updating Files:
 - Use YAML format for structured data (trackers, transactions, logs)

@@ -1,0 +1,67 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# PERSONAL GROWTH TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Habits ───────────────────────────────────────────────────────────────────
+habits:
+  building: []
+    # - name: "Morning routine"
+    #   trigger: "Alarm goes off"
+    #   action: "Meditate 10min → Journal → Plan day"
+    #   reward: "Coffee"
+    #   streak: 0
+    #   target_streak: 30
+    #   started: ""
+
+  breaking: []
+    # - name: "Doom scrolling"
+    #   trigger: "Boredom"
+    #   replacement: "Read a book or walk"
+    #   days_clean: 0
+
+# ── Morning Routine ──────────────────────────────────────────────────────────
+morning_routine:
+  wake_time: ""
+  steps:
+    - ""  # e.g., "No phone first 30 min"
+    - ""  # e.g., "Meditate 10 min"
+    - ""  # e.g., "Journal / gratitude"
+    - ""  # e.g., "Exercise"
+    - ""  # e.g., "Plan the day"
+
+# ── Evening Routine ──────────────────────────────────────────────────────────
+evening_routine:
+  wind_down_time: ""
+  steps:
+    - ""  # e.g., "Review day"
+    - ""  # e.g., "Prep tomorrow"
+    - ""  # e.g., "Read"
+    - ""  # e.g., "No screens"
+
+# ── Values in Action ─────────────────────────────────────────────────────────
+values_check: []
+  # Rate how well you lived your values this week
+  # - value: "Health"
+  #   score: 0  # 1-10
+  #   evidence: ""  # What you did
+  # - value: "Growth"
+  #   score: 0
+  #   evidence: ""
+
+# ── Life Experiments ─────────────────────────────────────────────────────────
+experiments: []
+  # Try something for 30 days and track results
+  # - name: "No sugar for 30 days"
+  #   started: ""
+  #   duration_days: 30
+  #   day_count: 0
+  #   observations: ""
+  #   result: ""  # keep, drop, modify
+
+# ── Reflection Prompts ───────────────────────────────────────────────────────
+weekly_review:
+  what_went_well: ""
+  what_didnt: ""
+  what_to_improve: ""
+  grateful_for: ""
+  focus_next_week: ""

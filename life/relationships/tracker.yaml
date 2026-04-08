@@ -1,0 +1,58 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# RELATIONSHIPS TRACKER
+# Stay intentional with the people who matter
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Inner Circle (reach out weekly) ──────────────────────────────────────────
+inner_circle: []
+  # - name: ""
+  #   relationship: ""  # partner, family, best-friend
+  #   last_contact: ""
+  #   birthday: ""
+  #   notes: ""
+  #   reminder: "weekly"
+
+# ── Close Friends (reach out monthly) ────────────────────────────────────────
+close_friends: []
+  # - name: ""
+  #   last_contact: ""
+  #   birthday: ""
+  #   how_we_met: ""
+  #   shared_interests: []
+  #   reminder: "monthly"
+
+# ── Professional Network (reach out quarterly) ───────────────────────────────
+professional: []
+  # - name: ""
+  #   role: ""
+  #   company: ""
+  #   last_contact: ""
+  #   context: ""  # How you know them
+  #   reminder: "quarterly"
+
+# ── Family ───────────────────────────────────────────────────────────────────
+family: []
+  # - name: ""
+  #   relationship: ""
+  #   birthday: ""
+  #   last_contact: ""
+  #   notes: ""
+
+# ── Relationship Goals ───────────────────────────────────────────────────────
+goals:
+  - goal: ""
+    notes: ""
+    status: not-started
+
+# ── Important Dates ──────────────────────────────────────────────────────────
+important_dates: []
+  # - date: "2026-05-12"
+  #   person: ""
+  #   occasion: ""  # birthday, anniversary, etc.
+  #   reminder_days_before: 7
+
+# ── People to Reconnect With ────────────────────────────────────────────────
+reconnect: []
+  # - name: ""
+  #   last_contact: ""
+  #   reason: ""

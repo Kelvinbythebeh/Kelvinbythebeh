@@ -1,0 +1,39 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# SIDE PROJECTS TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Active Projects ──────────────────────────────────────────────────────────
+active: []
+  # - name: ""
+  #   description: ""
+  #   status: idea  # idea, planning, building, launched, paused, abandoned
+  #   started: ""
+  #   tech_stack: []
+  #   repo: ""
+  #   url: ""
+  #   revenue: 0  # if monetized
+  #   hours_this_month: 0
+  #   next_milestone: ""
+  #   notes: ""
+
+# ── Ideas Backlog ────────────────────────────────────────────────────────────
+ideas: []
+  # - name: ""
+  #   description: ""
+  #   problem_solved: ""
+  #   effort: ""  # small, medium, large
+  #   potential: ""  # learning, portfolio, revenue
+  #   priority: low
+
+# ── Completed / Shipped ──────────────────────────────────────────────────────
+shipped: []
+  # - name: ""
+  #   description: ""
+  #   launched: ""
+  #   outcome: ""
+  #   lessons_learned: ""
+
+# ── Weekly Time Allocation ───────────────────────────────────────────────────
+time:
+  target_hours_per_week: 0
+  logged_this_week: 0

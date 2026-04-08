@@ -1,0 +1,50 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# TRAVEL TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Upcoming Trips ───────────────────────────────────────────────────────────
+upcoming: []
+  # - destination: ""
+  #   dates: { from: "", to: "" }
+  #   purpose: ""  # vacation, business, family
+  #   budget: 0
+  #   booked:
+  #     flights: false
+  #     accommodation: false
+  #     activities: false
+  #   packing_list: []
+  #   documents_needed: []  # visa, passport, insurance
+  #   notes: ""
+
+# ── Past Trips ───────────────────────────────────────────────────────────────
+past: []
+  # - destination: ""
+  #   dates: { from: "", to: "" }
+  #   total_spent: 0
+  #   highlights: []
+  #   would_return: true
+  #   rating: 0  # 1-5
+
+# ── Bucket List ──────────────────────────────────────────────────────────────
+bucket_list: []
+  # - destination: ""
+  #   why: ""
+  #   estimated_budget: 0
+  #   best_time_to_visit: ""
+  #   priority: low  # low, medium, high, next
+
+# ── Travel Essentials ────────────────────────────────────────────────────────
+documents:
+  passport_number: ""
+  passport_expiry: ""
+  frequent_flyer: []
+    # - airline: ""
+    #   number: ""
+    #   tier: ""
+    #   miles: 0
+
+# ── Annual Travel Budget ────────────────────────────────────────────────────
+budget:
+  annual_target: 0
+  spent_ytd: 0
+  remaining: 0

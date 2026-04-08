@@ -1,0 +1,56 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HOME & LIFE ADMIN TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Home Maintenance ─────────────────────────────────────────────────────────
+maintenance:
+  recurring: []
+    # - task: "Deep clean"
+    #   frequency: "monthly"
+    #   last_done: ""
+    #   next_due: ""
+    # - task: "AC filter"
+    #   frequency: "3 months"
+    #   last_done: ""
+    #   next_due: ""
+
+  upcoming_repairs: []
+    # - item: ""
+    #   urgency: low  # low, medium, high
+    #   estimated_cost: 0
+    #   notes: ""
+
+# ── Important Documents ──────────────────────────────────────────────────────
+documents:
+  # Don't store actual docs here - just track what you have and where
+  - type: "IC / Passport"
+    location: ""
+    expiry: ""
+    renewal_reminder: ""
+  - type: "Insurance policies"
+    location: ""
+    renewal_date: ""
+  - type: "Tenancy agreement"
+    location: ""
+    expiry: ""
+
+# ── Subscriptions & Bills ────────────────────────────────────────────────────
+# Duplicated from finance but focused on due dates
+bills_calendar: []
+  # - name: "Rent"
+  #   amount: 0
+  #   due_day: 1  # Day of month
+  #   auto_pay: true
+  # - name: "Electricity"
+  #   amount: 0
+  #   due_day: 15
+  #   auto_pay: false
+
+# ── Inventory (Big Ticket Items) ─────────────────────────────────────────────
+inventory: []
+  # - item: "Laptop"
+  #   brand: ""
+  #   purchased: ""
+  #   warranty_until: ""
+  #   cost: 0
+  #   notes: ""

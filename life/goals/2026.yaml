@@ -1,0 +1,92 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# 2026 ANNUAL GOALS
+# Break down your year into concrete targets
+# ═══════════════════════════════════════════════════════════════════════════════
+
+year: 2026
+theme: ""  # e.g., "Year of Building", "Year of Health"
+
+# ── Annual Goals by Domain ───────────────────────────────────────────────────
+
+health:
+  - goal: ""
+    target: ""
+    measure: ""  # How you'll know you achieved it
+    status: not-started  # not-started, in-progress, on-track, behind, achieved
+    progress: 0  # percentage
+
+fitness:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+finance:
+  - goal: "Build emergency fund"
+    target: ""
+    measure: "X months of expenses saved"
+    status: not-started
+    progress: 0
+  - goal: "Track all spending"
+    target: "100% of transactions logged"
+    measure: "Monthly reviews completed"
+    status: not-started
+    progress: 0
+
+career:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+relationships:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+learning:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+personal_growth:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+travel:
+  - goal: ""
+    target: ""
+    measure: ""
+    status: not-started
+    progress: 0
+
+# ── Quarterly Milestones ─────────────────────────────────────────────────────
+
+Q1:  # Jan - Mar
+  focus: ""
+  milestones: []
+  review: ""
+
+Q2:  # Apr - Jun (YOU ARE HERE)
+  focus: ""
+  milestones: []
+  review: ""
+
+Q3:  # Jul - Sep
+  focus: ""
+  milestones: []
+  review: ""
+
+Q4:  # Oct - Dec
+  focus: ""
+  milestones: []
+  review: ""

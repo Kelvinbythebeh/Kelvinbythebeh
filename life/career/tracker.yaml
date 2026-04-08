@@ -1,0 +1,68 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CAREER TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Current Role ─────────────────────────────────────────────────────────────
+current:
+  title: ""
+  company: ""
+  started: ""
+  salary: 0
+  currency: MYR
+  satisfaction: 0  # 1-10
+  growth_rating: 0  # 1-10
+
+# ── Career Goals ─────────────────────────────────────────────────────────────
+goals:
+  short_term:  # 6-12 months
+    - goal: ""
+      deadline: ""
+      status: not-started
+  medium_term:  # 1-3 years
+    - goal: ""
+      deadline: ""
+      status: not-started
+  long_term:  # 3-5+ years
+    - goal: ""
+      deadline: ""
+      status: not-started
+
+# ── Skills ───────────────────────────────────────────────────────────────────
+skills:
+  strong: []      # Skills you're confident in
+  developing: []  # Currently improving
+  want_to_learn: []  # On the radar
+  market_demand: []  # High-value skills in your field
+
+# ── Salary & Compensation History ────────────────────────────────────────────
+compensation_history: []
+  # - date: "2026-01-01"
+  #   title: ""
+  #   company: ""
+  #   base_salary: 0
+  #   bonus: 0
+  #   benefits: ""
+  #   total_comp: 0
+
+# ── Performance Tracking ─────────────────────────────────────────────────────
+wins: []
+  # Track achievements for reviews and resume
+  # - date: ""
+  #   achievement: ""
+  #   impact: ""  # Quantify if possible
+  #   category: ""  # leadership, technical, business
+
+# ── Networking ───────────────────────────────────────────────────────────────
+networking:
+  events_attended: []
+  mentors: []
+  mentees: []
+  communities: []  # Slack groups, meetups, etc.
+
+# ── Job Market Awareness ─────────────────────────────────────────────────────
+market:
+  last_resume_update: ""
+  last_linkedin_update: ""
+  target_companies: []
+  target_roles: []
+  salary_benchmark: 0  # What market pays for your level

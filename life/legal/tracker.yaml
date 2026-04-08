@@ -1,0 +1,50 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# LEGAL & INSURANCE TRACKER
+# Track expiries, renewals, and important legal matters
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Insurance Policies ───────────────────────────────────────────────────────
+insurance: []
+  # - type: "Health Insurance"
+  #   provider: ""
+  #   policy_number: ""
+  #   coverage: ""
+  #   premium: 0
+  #   frequency: monthly  # monthly, annual
+  #   renewal_date: ""
+  #   notes: ""
+  # - type: "Car Insurance"
+  #   provider: ""
+  #   renewal_date: ""
+  # - type: "Life Insurance"
+  #   provider: ""
+  #   renewal_date: ""
+
+# ── Key Documents & Expiries ─────────────────────────────────────────────────
+documents:
+  passport:
+    number: ""
+    expiry: ""
+    renew_by: ""  # 6 months before expiry for travel
+  drivers_license:
+    expiry: ""
+  tax:
+    filing_deadline: ""
+    last_filed: ""
+
+# ── Tax ──────────────────────────────────────────────────────────────────────
+tax:
+  filing_status: ""
+  last_filed_year: ""
+  estimated_annual_tax: 0
+  deductions_to_track: []
+  important_dates:
+    - date: ""
+      description: ""
+
+# ── Warranties ───────────────────────────────────────────────────────────────
+warranties: []
+  # - item: ""
+  #   purchased: ""
+  #   warranty_expires: ""
+  #   receipt_location: ""

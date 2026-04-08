@@ -1,0 +1,54 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# FITNESS TRACKER
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Current Stats ────────────────────────────────────────────────────────────
+stats:
+  weight_kg: 0
+  height_cm: 0
+  bmi: 0
+  body_fat_pct: 0
+  last_measured: ""
+
+# ── Goals ────────────────────────────────────────────────────────────────────
+goals:
+  - name: ""
+    type: ""  # weight-loss, muscle-gain, endurance, flexibility, strength
+    target: ""
+    deadline: ""
+    current: ""
+    status: not-started
+
+# ── Weekly Schedule ──────────────────────────────────────────────────────────
+schedule:
+  monday: ""     # e.g., "Push day - chest/shoulders/triceps"
+  tuesday: ""    # e.g., "Cardio - 30min run"
+  wednesday: ""  # e.g., "Pull day - back/biceps"
+  thursday: ""   # e.g., "Rest / active recovery"
+  friday: ""     # e.g., "Legs"
+  saturday: ""   # e.g., "Full body / sport"
+  sunday: ""     # e.g., "Rest"
+
+# ── Current Program ──────────────────────────────────────────────────────────
+program:
+  name: ""  # e.g., "PPL", "5x5", "Couch to 5K"
+  started: ""
+  weeks_completed: 0
+  notes: ""
+
+# ── Personal Records ─────────────────────────────────────────────────────────
+personal_records: []
+  # - exercise: "Bench Press"
+  #   weight_kg: 80
+  #   reps: 5
+  #   date: "2026-04-01"
+  # - exercise: "5K Run"
+  #   time: "25:30"
+  #   date: "2026-03-15"
+
+# ── Streaks ──────────────────────────────────────────────────────────────────
+streaks:
+  current_workout_streak: 0  # consecutive days/weeks
+  longest_streak: 0
+  workouts_this_week: 0
+  workouts_this_month: 0

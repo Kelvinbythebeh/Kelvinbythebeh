@@ -1,0 +1,52 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# WEEKLY REVIEW TEMPLATE
+# Do this every Sunday - ask Claude to help you fill it in
+# ═══════════════════════════════════════════════════════════════════════════════
+
+week: ""  # e.g., "2026-W15"
+date: "YYYY-MM-DD"
+
+# ── Life Score This Week (1-10) ──────────────────────────────────────────────
+scores:
+  health: 0
+  fitness: 0
+  mental_wellness: 0
+  career: 0
+  finance: 0
+  relationships: 0
+  personal_growth: 0
+  fun: 0
+
+# ── Wins ─────────────────────────────────────────────────────────────────────
+wins:
+  - ""
+
+# ── Challenges ───────────────────────────────────────────────────────────────
+challenges:
+  - ""
+
+# ── Key Numbers ──────────────────────────────────────────────────────────────
+numbers:
+  money_spent: 0
+  money_earned: 0
+  workouts: 0
+  sleep_avg_hours: 0
+  books_pages_read: 0
+  learning_hours: 0
+
+# ── Next Week Focus ──────────────────────────────────────────────────────────
+next_week:
+  top_3_priorities:
+    - ""
+    - ""
+    - ""
+  habits_to_maintain: []
+  habits_to_improve: []
+  appointments: []
+
+# ── Reflection ───────────────────────────────────────────────────────────────
+reflection:
+  what_went_well: ""
+  what_to_improve: ""
+  grateful_for: ""
+  one_thing_to_change: ""

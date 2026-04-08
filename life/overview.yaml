@@ -1,0 +1,58 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# LIFE OVERVIEW - The Big Picture
+# Your life dashboard across all domains
+# ═══════════════════════════════════════════════════════════════════════════════
+
+last_reviewed: "2026-04-08"
+next_review: "2026-04-15"  # Weekly review cadence
+
+# ── Life Vision ──────────────────────────────────────────────────────────────
+vision:
+  one_liner: ""  # Your life in one sentence
+  core_values:
+    - ""  # e.g., Freedom, Growth, Family, Health, Impact
+    - ""
+    - ""
+    - ""
+    - ""
+  life_purpose: ""
+
+# ── Life Score (Rate yourself 1-10, update weekly) ───────────────────────────
+life_score:
+  date: "2026-04-08"
+  health: 0
+  fitness: 0
+  mental_wellness: 0
+  career: 0
+  finance: 0
+  relationships: 0
+  personal_growth: 0
+  fun_recreation: 0
+  environment: 0  # Living space, surroundings
+  contribution: 0  # Giving back, impact
+  overall: 0
+
+# ── Top 3 Priorities Right Now ───────────────────────────────────────────────
+current_focus:
+  - area: ""
+    goal: ""
+    why: ""
+  - area: ""
+    goal: ""
+    why: ""
+  - area: ""
+    goal: ""
+    why: ""
+
+# ── Life Domains Quick Status ────────────────────────────────────────────────
+domains:
+  health:       { status: "needs-setup", file: "health/tracker.yaml" }
+  fitness:      { status: "needs-setup", file: "fitness/tracker.yaml" }
+  finance:      { status: "needs-setup", file: "finance/tracker.yaml" }
+  career:       { status: "needs-setup", file: "career/tracker.yaml" }
+  relationships:{ status: "needs-setup", file: "relationships/tracker.yaml" }
+  learning:     { status: "needs-setup", file: "learning/tracker.yaml" }
+  mental:       { status: "needs-setup", file: "mental-wellness/tracker.yaml" }
+  growth:       { status: "needs-setup", file: "personal-growth/tracker.yaml" }
+  travel:       { status: "needs-setup", file: "travel/tracker.yaml" }
+  side_projects:{ status: "needs-setup", file: "side-projects/tracker.yaml" }
