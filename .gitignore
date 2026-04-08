@@ -18,6 +18,12 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Vault raw data (large JSON files - only .gitkeep is tracked)
+vault/**/*.json
+vault/**/*.csv
+vault/**/*.xml
+data/raw/
+
 # Temporary exports
 *.tmp
 *.bak

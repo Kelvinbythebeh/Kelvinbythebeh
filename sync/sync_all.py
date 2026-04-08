@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """
-Master Sync Orchestrator - Pulls ALL data sources into the brain.
+Master Sync Orchestrator - Pulls ALL data sources into the vault.
 
 Data Flow:
-    External Services → Google Drive (raw/) → This Repo (data/raw/) → life/ trackers
+    Step 1 (PULL):  External Services → vault/ (raw JSON/CSV)
+    Step 2 (PUSH):  vault/ → Google Drive (backup + cloud access)
+    Step 3 (PROCESS): vault/ → life/ (structured YAML for Claude)
 
 Usage:
-    python sync_all.py                     # Sync everything that's configured
-    python sync_all.py --source oura       # Sync only Oura
-    python sync_all.py --drive             # Pull from Google Drive first
-    python sync_all.py --analyze           # Analyze all data after sync
-    python sync_all.py --report            # Generate dashboard
+    python sync/sync_all.py                          # Pull all configured sources → vault
+    python sync/sync_all.py --source garmin           # Pull only Garmin
+    python sync/sync_all.py --source oura             # Pull only Oura
+    python sync/sync_all.py --category health          # Pull all health sources
+    python sync/sync_all.py --process                  # Also run processors after pull
+    python sync/sync_all.py --drive                    # Sync vault ↔ Google Drive
+    python sync/sync_all.py --status                   # Show what's configured
 
-Sources:
+Kelvin's Stack:
+    Health:   garmin, oura, apple-health
+    Time:     toggl, google-calendar
+    Finance:  banking (CSV)
     Notes:    apple-notes, onenote
-    Health:   oura, apple-health, strava
-    Finance:  banking
-    Work:     google-calendar, todoist
     Life:     spotify, screen-time
 """
 
@@ -54,23 +58,23 @@ SOURCES = {
     },
 
     # Health
+    'garmin': {
+        'script': 'garmin/sync_garmin.py',
+        'category': 'health',
+        'needs_input': False,
+        'description': 'Garmin Connect - sleep, steps, HR, stress, body battery, workouts',
+    },
     'oura': {
         'script': 'oura/sync_oura.py',
         'category': 'health',
         'needs_input': False,
-        'description': 'Oura Ring - sleep, readiness, activity, HR',
+        'description': 'Oura Ring - sleep score, readiness, HRV, activity',
     },
     'apple-health': {
         'script': 'apple-health/sync_apple_health.py',
         'category': 'health',
         'needs_input': True,
-        'description': 'Apple Health - steps, HR, workouts, sleep',
-    },
-    'strava': {
-        'script': 'strava/sync_strava.py',
-        'category': 'health',
-        'needs_input': False,
-        'description': 'Strava - workouts, runs, rides',
+        'description': 'Apple Health - steps, HR, workouts, sleep (Shortcuts export)',
     },
 
     # Finance
@@ -78,10 +82,16 @@ SOURCES = {
         'script': 'banking/sync_banking.py',
         'category': 'finance',
         'needs_input': True,
-        'description': 'Bank statements - transactions, spending',
+        'description': 'Bank statements - transactions, spending (CSV)',
     },
 
-    # Work
+    # Time & Work
+    'toggl': {
+        'script': 'toggl/sync_toggl.py',
+        'category': 'work',
+        'needs_input': False,
+        'description': 'Toggl Track - time entries, projects, productivity',
+    },
     'google-calendar': {
         'script': 'google-calendar/sync_calendar.py',
         'category': 'work',
@@ -164,13 +174,18 @@ def check_configured(name: str) -> bool:
     """Check if a source has its credentials configured."""
     config_dir = BASE_DIR / ".config"
     config_checks = {
+        'garmin': config_dir / "garmin_config.json",
         'oura': config_dir / "oura_config.json",
+        'toggl': config_dir / "toggl_config.json",
         'onenote': config_dir / "onenote_config.json",
         'strava': config_dir / "strava_config.json",
         'todoist': config_dir / "todoist_config.json",
         'spotify': config_dir / "spotify_config.json",
         'google-calendar': config_dir / "google_token.json",
         'banking': None,  # Uses CSV input, always "ready"
+        'apple-notes': None,
+        'apple-health': None,
+        'screen-time': None,
     }
 
     check = config_checks.get(name)
@@ -258,10 +273,12 @@ def generate_dashboard(summary: dict = None):
     # Check for synced data files
     data_lines = []
     life_files = {
+        'Garmin health': 'life/health/daily-data.yaml',
+        'Garmin workouts': 'life/health/workouts-data.yaml',
         'Oura sleep': 'life/health/oura-data.yaml',
         'Apple Health': 'life/health/apple-health-data.yaml',
-        'Strava workouts': 'life/fitness/strava-data.yaml',
-        'Bank transactions': 'life/finance/bank-*-data.yaml',
+        'Toggl time': 'work/time-tracking.yaml',
+        'Bank transactions': 'life/finance/transactions-*.yaml',
         'Calendar events': 'work/calendar-data.yaml',
         'Todoist tasks': 'work/todoist-data.yaml',
         'Spotify listening': 'life/mental-wellness/spotify-data.yaml',
@@ -324,7 +341,9 @@ def main():
                         choices=['notes', 'health', 'finance', 'work', 'life'],
                         help='Sync all sources in a category')
     parser.add_argument('--drive', action='store_true',
-                        help='Pull from Google Drive before syncing')
+                        help='Sync vault ↔ Google Drive')
+    parser.add_argument('--process', action='store_true',
+                        help='Run processors after sync (vault → life/ brain)')
     parser.add_argument('--analyze', action='store_true', help='Analyze all data')
     parser.add_argument('--report', action='store_true', help='Generate dashboard')
     parser.add_argument('--status', action='store_true', help='Show what is configured')
@@ -372,7 +391,7 @@ def main():
 
     for name in sources_to_run:
         extra_args = []
-        if name in ('oura', 'strava') and args.days:
+        if name in ('garmin', 'oura', 'toggl', 'strava') and args.days:
             extra_args = ['--days', str(args.days)]
         results[name] = run_source(name, extra_args)
 
@@ -384,6 +403,15 @@ def main():
         for name, success in results.items():
             icon = "OK" if success else "FAILED"
             print(f"  {name:<20} {icon}")
+
+    # Run processors (vault → brain)
+    if args.process:
+        print(f"\n{'=' * 60}")
+        print("  PROCESSING: vault → life/ brain")
+        print(f"{'=' * 60}")
+        processor = BASE_DIR / "processors" / "process_all.py"
+        extra = ['--days', str(args.days)] if args.days else []
+        subprocess.run([sys.executable, str(processor)] + extra, cwd=str(BASE_DIR))
 
     # Analyze and report
     summary = None
