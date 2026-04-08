@@ -1,0 +1,91 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# WORK MANAGEMENT - Central work tracking
+# AI assistant helps prioritize, track deadlines, and manage projects
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Active Projects ──────────────────────────────────────────────────────────
+projects: []
+  # - name: "Project Alpha"
+  #   status: in-progress  # planned, in-progress, review, completed, paused
+  #   priority: high
+  #   deadline: "2026-05-01"
+  #   description: ""
+  #   key_milestones:
+  #     - name: "Phase 1"
+  #       status: completed
+  #       date: "2026-03-15"
+  #     - name: "Phase 2"
+  #       status: in-progress
+  #       date: "2026-04-15"
+  #   notes_refs: []  # Links to relevant notes
+
+# ── Current Tasks ────────────────────────────────────────────────────────────
+tasks:
+  inbox: []
+    # Tasks captured from notes that need to be triaged
+    # - title: ""
+    #   source: "apple-notes"
+    #   captured_at: ""
+
+  today: []
+    # - title: ""
+    #   project: ""
+    #   priority: high
+    #   estimated_hours: 1
+    #   status: pending  # pending, in-progress, done, blocked
+
+  this_week: []
+    # - title: ""
+    #   project: ""
+    #   priority: medium
+    #   due: ""
+    #   status: pending
+
+  backlog: []
+    # - title: ""
+    #   project: ""
+    #   priority: low
+    #   notes: ""
+
+# ── Goals & OKRs ────────────────────────────────────────────────────────────
+goals:
+  quarterly: []
+    # - objective: "Ship v2.0"
+    #   key_results:
+    #     - description: "Complete core features"
+    #       target: 100
+    #       current: 60
+    #       unit: "%"
+    #   deadline: "2026-06-30"
+
+  annual: []
+    # - objective: ""
+    #   key_results: []
+
+# ── Meetings & Follow-ups ───────────────────────────────────────────────────
+meetings:
+  upcoming: []
+    # - title: ""
+    #   date: ""
+    #   time: ""
+    #   with: []
+    #   agenda: ""
+    #   notes_ref: ""
+
+  action_items: []
+    # Extracted from meeting notes
+    # - item: ""
+    #   from_meeting: ""
+    #   assigned_to: ""
+    #   due: ""
+    #   status: pending
+
+# ── Learning & Development ───────────────────────────────────────────────────
+learning:
+  current: []
+    # - topic: ""
+    #   resource: ""
+    #   progress: 0
+    #   notes: ""
+  completed: []
+  want_to_learn: []

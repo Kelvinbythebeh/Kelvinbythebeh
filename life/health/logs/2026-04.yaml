@@ -1,0 +1,35 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HEALTH LOG - April 2026
+# Daily health tracking - updated from notes or manual input
+# ═══════════════════════════════════════════════════════════════════════════════
+
+month: "2026-04"
+daily_logs: []
+  # - date: "2026-04-08"
+  #   sleep:
+  #     hours: 7.5
+  #     quality: 8  # 1-10
+  #     bedtime: "23:00"
+  #     wakeup: "06:30"
+  #   nutrition:
+  #     meals: 3
+  #     water_glasses: 8
+  #     notes: ""
+  #   exercise:
+  #     type: "gym - upper body"
+  #     duration_min: 60
+  #     notes: ""
+  #   wellness:
+  #     mood: 7  # 1-10
+  #     energy: 8  # 1-10
+  #     stress: 3  # 1-10 (lower is better)
+  #     notes: ""
+  #   weight_kg: 0
+
+weekly_summary: []
+  # - week: 1  # Week of month
+  #   avg_sleep: 0
+  #   workouts: 0
+  #   avg_mood: 0
+  #   avg_energy: 0
+  #   notes: ""

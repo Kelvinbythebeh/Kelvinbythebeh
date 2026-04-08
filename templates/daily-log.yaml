@@ -1,0 +1,41 @@
+# Daily Log Template
+# Copy this into life/health/logs/ or ask Claude to log your day
+
+date: "YYYY-MM-DD"
+
+# Health
+sleep:
+  hours: 0
+  quality: 0  # 1-10
+  bedtime: ""
+  wakeup: ""
+
+nutrition:
+  meals: 0
+  water_glasses: 0
+  notes: ""
+
+exercise:
+  type: ""
+  duration_min: 0
+  notes: ""
+
+wellness:
+  mood: 0  # 1-10
+  energy: 0  # 1-10
+  stress: 0  # 1-10 (lower is better)
+  notes: ""
+
+weight_kg: 0
+
+# Finance
+spending: []
+  # - amount: 0
+  #   category: ""
+  #   description: ""
+
+# Work
+tasks_completed: []
+tasks_started: []
+meetings: []
+notes: ""

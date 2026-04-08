@@ -1,0 +1,11 @@
+# Transaction Template
+# Use this format when logging expenses/income
+
+- date: "YYYY-MM-DD"
+  amount: 0          # Negative for expenses, positive for income
+  category: ""       # housing, food, transport, utilities, subscriptions, health, entertainment, savings, investments, education, income, misc
+  subcategory: ""    # Optional: groceries, dining-out, fuel, etc.
+  description: ""
+  source: ""         # Where this was captured from: apple-notes, onenote, manual
+  recurring: false   # Is this a recurring transaction?
+  tags: []

@@ -1,0 +1,80 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HEALTH TRACKER - Central health & wellness overview
+# Updated by AI assistant based on your notes and inputs
+# ═══════════════════════════════════════════════════════════════════════════════
+
+profile:
+  height_cm: 0
+  weight_kg: 0
+  age: 0
+  blood_type: ""
+
+# ── Goals ────────────────────────────────────────────────────────────────────
+goals:
+  fitness:
+    - name: "Regular exercise"
+      target: "4x per week"
+      current_streak: 0
+      priority: high
+  nutrition:
+    - name: "Balanced meals"
+      target: "Track daily"
+      priority: medium
+  sleep:
+    - name: "Consistent sleep schedule"
+      target: "7-8 hours"
+      priority: high
+  mental:
+    - name: "Mindfulness practice"
+      target: "Daily"
+      priority: medium
+  checkups:
+    - name: "Annual health checkup"
+      last_done: ""
+      next_due: ""
+      priority: high
+
+# ── Metrics to Track ─────────────────────────────────────────────────────────
+tracking:
+  daily:
+    - sleep_hours
+    - water_glasses
+    - steps
+    - mood  # 1-10 scale
+    - energy  # 1-10 scale
+  weekly:
+    - workouts_completed
+    - weight_kg
+  monthly:
+    - body_measurements
+    - health_expenses
+
+# ── Supplements & Medications ────────────────────────────────────────────────
+supplements: []
+  # - name: "Vitamin D"
+  #   dosage: "1000 IU"
+  #   frequency: daily
+  #   time: morning
+  # - name: "Fish Oil"
+  #   dosage: "1000mg"
+  #   frequency: daily
+  #   time: morning
+
+medications: []
+  # - name: ""
+  #   dosage: ""
+  #   frequency: ""
+  #   prescriber: ""
+  #   refill_date: ""
+
+# ── Fitness Plan ─────────────────────────────────────────────────────────────
+fitness_plan:
+  type: ""  # e.g., "strength training", "cardio mix", "calisthenics"
+  schedule: {}
+    # monday: "Upper body"
+    # tuesday: "Cardio"
+    # wednesday: "Lower body"
+    # thursday: "Rest"
+    # friday: "Full body"
+    # saturday: "Active recovery"
+    # sunday: "Rest"

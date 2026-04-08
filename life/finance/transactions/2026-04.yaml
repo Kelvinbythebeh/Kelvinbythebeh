@@ -1,0 +1,30 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# TRANSACTIONS - April 2026
+# Add transactions here or let AI extract them from your notes
+# ═══════════════════════════════════════════════════════════════════════════════
+
+month: "2026-04"
+transactions: []
+  # Example entries:
+  # - date: "2026-04-01"
+  #   amount: -1500
+  #   category: housing
+  #   description: "Monthly rent"
+  #   source: apple-notes  # Where this was captured from
+  #
+  # - date: "2026-04-02"
+  #   amount: -45.50
+  #   category: food
+  #   subcategory: groceries
+  #   description: "Weekly groceries"
+  #
+  # - date: "2026-04-01"
+  #   amount: 5000
+  #   category: income
+  #   description: "Monthly salary"
+
+summary:
+  total_income: 0
+  total_expenses: 0
+  net: 0
+  by_category: {}

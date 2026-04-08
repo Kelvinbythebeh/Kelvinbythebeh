@@ -1,0 +1,94 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# FINANCE TRACKER - Central financial overview
+# Updated by AI assistant based on your notes, transactions, and inputs
+# ═══════════════════════════════════════════════════════════════════════════════
+
+profile:
+  currency: MYR  # Change to your currency (USD, GBP, SGD, etc.)
+  financial_year_start: "2026-01-01"
+
+# ── Monthly Budget ───────────────────────────────────────────────────────────
+budget:
+  monthly_income: 0  # Update with your monthly income
+  categories:
+    housing:
+      budget: 0
+      notes: "Rent/mortgage"
+    food:
+      budget: 0
+      subcategories: [groceries, dining-out, delivery]
+    transport:
+      budget: 0
+      subcategories: [fuel, public-transport, grab, parking]
+    utilities:
+      budget: 0
+      subcategories: [electricity, water, internet, phone]
+    subscriptions:
+      budget: 0
+      items: []  # List your subscriptions here
+    health:
+      budget: 0
+      subcategories: [insurance, gym, supplements, medical]
+    entertainment:
+      budget: 0
+    savings:
+      budget: 0
+      target_percent: 20
+    investments:
+      budget: 0
+      platforms: []  # e.g., [stashaway, wahed, stocks]
+    education:
+      budget: 0
+      notes: "Courses, books, certifications"
+    misc:
+      budget: 0
+
+# ── Financial Goals ──────────────────────────────────────────────────────────
+goals:
+  - name: "Emergency Fund"
+    target: 0
+    current: 0
+    deadline: "2026-12-31"
+    priority: high
+  - name: "Investment Portfolio"
+    target: 0
+    current: 0
+    deadline: "2027-06-30"
+    priority: medium
+
+# ── Subscriptions Tracker ────────────────────────────────────────────────────
+subscriptions: []
+  # - name: "Netflix"
+  #   cost: 55
+  #   frequency: monthly
+  #   category: entertainment
+  #   auto_renew: true
+  #   next_billing: "2026-05-01"
+  # - name: "Claude Pro"
+  #   cost: 20
+  #   frequency: monthly
+  #   category: productivity
+  #   auto_renew: true
+
+# ── Debt Tracker ─────────────────────────────────────────────────────────────
+debts: []
+  # - name: "Student Loan"
+  #   total: 50000
+  #   remaining: 35000
+  #   monthly_payment: 500
+  #   interest_rate: 4.5
+  #   target_payoff: "2028-01-01"
+
+# ── Net Worth Snapshot ───────────────────────────────────────────────────────
+net_worth:
+  last_updated: "2026-04-08"
+  assets:
+    cash: 0
+    savings: 0
+    investments: 0
+    property: 0
+    other: 0
+  liabilities:
+    loans: 0
+    credit_cards: 0
+    other: 0
