@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# GOALS - What you're working toward
+# Set these quarterly. Claude tracks progress from your daily activity.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+year: 2026
+theme: ""  # e.g. "Year of Building"
+
+# ── Active Goals (keep it to 5-7 max) ────────────────────────────────────────
+goals:
+  # - goal: "Build emergency fund"
+  #   area: finance
+  #   target: "6 months expenses"
+  #   progress: "0%"
+  #   deadline: "2026-12-31"
+  #
+  # - goal: "Run 5K under 25 minutes"
+  #   area: fitness
+  #   target: "25:00"
+  #   progress: "current: 28:30"
+  #   deadline: "2026-06-30"
+  #
+  # - goal: "Ship side project"
+  #   area: growth
+  #   target: "Live and usable"
+  #   progress: "planning phase"
+  #   deadline: "2026-09-01"
+
+# ── Someday / Maybe ──────────────────────────────────────────────────────────
+someday: []
+  # Things you want to do but not committing to yet
+  # - "Learn Japanese"
+  # - "Write a blog"
+  # - "Travel to Japan"
+
+# ── Key Dates & Deadlines ────────────────────────────────────────────────────
+deadlines: []
+  # - date: ""
+  #   what: ""
+  #   reminder_days_before: 7

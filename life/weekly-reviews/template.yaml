@@ -1,0 +1,30 @@
+# Weekly Review - Claude generates this for you every Sunday
+# Just ask: "Claude, weekly review"
+
+week: ""
+date: ""
+
+scores:  # 1-10
+  health: 0
+  career: 0
+  finance: 0
+  relationships: 0
+  growth: 0
+  happiness: 0
+
+wins: []
+struggles: []
+
+numbers:
+  spent: 0
+  earned: 0
+  saved: 0
+  workouts: 0
+  avg_sleep: 0
+
+next_week:
+  - ""
+  - ""
+  - ""
+
+one_thing_to_improve: ""

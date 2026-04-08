@@ -1,0 +1,29 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# FINANCE LOG - Claude adds entries here from your notes
+# You never edit this manually. Just tell Claude what you spent.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+monthly_budget: 0  # Your total monthly budget
+savings_target_pct: 20  # % of income to save
+
+# ── Recurring (set once, Claude tracks) ──────────────────────────────────────
+recurring:
+  # - name: "Rent"
+  #   amount: 0
+  #   day: 1
+  #   category: housing
+  # - name: "Netflix"
+  #   amount: 55
+  #   day: 15
+  #   category: subscriptions
+
+# ── April 2026 ───────────────────────────────────────────────────────────────
+2026-04:
+  transactions: []
+    # Claude adds entries like:
+    # - { date: "2026-04-08", amount: -45, category: food, note: "Lunch with team" }
+    # - { date: "2026-04-08", amount: -55, category: subscriptions, note: "Netflix" }
+  summary:
+    income: 0
+    spent: 0
+    saved: 0

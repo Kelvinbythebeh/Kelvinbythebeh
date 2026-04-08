@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# ME - Everything about you in one file
+# Fill this once, update occasionally. Claude references this for context.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: Kelvin
+currency: MYR
+
+# ── The Big Picture ──────────────────────────────────────────────────────────
+values: []         # What matters most to you (3-5 words)
+current_focus: []  # Top 3 things you're focusing on right now
+
+# ── Life Scores (update weekly, 1-10) ────────────────────────────────────────
+scores:
+  health: 0
+  career: 0
+  finance: 0
+  relationships: 0
+  growth: 0
+  happiness: 0
+
+# ── Basic Info (for health/fitness context) ──────────────────────────────────
+health:
+  age: 0
+  height_cm: 0
+  weight_kg: 0
+  conditions: []
+  supplements: []
+  medications: []
+
+# ── Career Context ───────────────────────────────────────────────────────────
+work:
+  role: ""
+  company: ""
+  monthly_income: 0
+
+# ── Key People (so Claude knows who you're talking about) ────────────────────
+people: {}
+  # mom: { name: "", birthday: "" }
+  # partner: { name: "", birthday: "" }
+  # boss: { name: "" }

@@ -1,0 +1,33 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# TASKS & PROJECTS - Claude manages this from your notes
+# Just tell Claude what you need to do. It handles priority and tracking.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Inbox (unsorted - Claude triages these) ──────────────────────────────────
+inbox: []
+  # Raw tasks captured from notes before Claude sorts them
+
+# ── Active ───────────────────────────────────────────────────────────────────
+active: []
+  # - task: ""
+  #   priority: high  # high, medium, low
+  #   due: ""
+  #   project: ""
+  #   status: todo  # todo, doing, done, blocked
+  #   added: ""
+
+# ── Projects ─────────────────────────────────────────────────────────────────
+projects: []
+  # - name: ""
+  #   status: active  # active, paused, done
+  #   deadline: ""
+  #   next_action: ""
+
+# ── Waiting On (things other people owe you) ─────────────────────────────────
+waiting: []
+  # - what: ""
+  #   from: ""
+  #   since: ""
+
+# ── Done This Week ──────────────────────────────────────────────────────────
+done_this_week: []

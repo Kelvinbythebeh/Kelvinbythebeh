@@ -1,0 +1,32 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HEALTH LOG - Claude adds entries here from your notes
+# Just tell Claude: "slept 7hrs, gym 45min, mood 8/10"
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Goals (set once) ─────────────────────────────────────────────────────────
+goals:
+  sleep_hours: 7.5
+  workouts_per_week: 4
+  water_glasses: 8
+  weight_target_kg: 0
+
+# ── Fitness Plan ─────────────────────────────────────────────────────────────
+workout_split: {}
+  # monday: "Push"
+  # tuesday: "Cardio"
+  # wednesday: "Pull"
+  # thursday: "Rest"
+  # friday: "Legs"
+  # saturday: "Active"
+  # sunday: "Rest"
+
+# ── Daily Log (Claude fills this) ────────────────────────────────────────────
+2026-04: []
+  # Claude adds entries like:
+  # - date: "2026-04-08"
+  #   sleep: 7
+  #   workout: "Chest + triceps, 45min"
+  #   mood: 8
+  #   energy: 7
+  #   weight: 72.5
+  #   notes: ""
